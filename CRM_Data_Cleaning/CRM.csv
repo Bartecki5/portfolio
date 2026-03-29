@@ -1,0 +1,9 @@
+customer_id,first_name,last_name,email,age,city,phone,registration_date
+1, Jan ,Kowalski,jan.kowalski@email.com,34, Warszawa ,+48123456789,2023-01-15
+2,ANNA,nowak,anna.nowak_email.com,28,Kraków,,2023-02-20
+3, Piotr, Wiśniewski,piotr.w@email.com,150, ,+48987654321,2023-03-05
+4,Kasia,Wójcik,kasia@email.com,-5,Gdańsk, ,2023-04-10
+1, Jan ,Kowalski,jan.kowalski@email.com,34, Warszawa ,+48123456789,2023-01-15
+5,  Michał , Kamiński,michal.k@email.com,,Poznań,111222333,2023-05-12
+6,Zofia,Lewandowska,zofia.l@email.com,45,,,2023-06-18
+7,Tomasz,Zieliński,tomasz.z@email.com,30,Wrocław,555a444333,2023-07-22
