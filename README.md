@@ -7,7 +7,7 @@ Witaj w moim repozytorium! Znajdziesz tutaj zbiór moich skryptów, automatyzacj
 | Nr | Nazwa Projektu | Krótki opis | Technologie |
 |:---|:---|:---|:---|
 | **01** | [CRM Data Pipeline & Quality Check](./01_CRM_Data_Cleaning) | Zautomatyzowany skrypt ETL do czyszczenia brudnej bazy CRM. Zawiera moduł raportujący błędy (Quality Check), inteligentną deduplikację na podstawie kompletności wierszy, standaryzację tekstu oraz inżynierię cech (np. wyliczanie stażu klienta). | `Pandas`, `NumPy`, `Datetime` |
-| **02** | *Wkrótce...* | Miejsce na Twój kolejny projekt! | |
-
+| **02** | [K-Nearest Neighbors (From Scratch)](./KNN_Algorithm) | Implementacja algorytmu KNN (K-Najbliższych Sąsiadów) napisana całkowicie od zera z wykorzystaniem wektoryzacji `NumPy`. Zawiera autorski kalkulator odległości euklidesowej oraz system głosowania większościowego. Testowano na zbiorze Iris. | `Python`, `NumPy` |
+| **03** | [Random Forest & Random Search](./Random_forest) | Autorski silnik Lasu Losowego i Drzew (CART/C4.5) zbudowany od podstaw. Wykorzystuje matematykę Entropii, dekorelację drzew (pierwiastek z cech) oraz własny system strojenia hiperparametrów (Random Search). Obejmuje twardy benchmarking z gotowymi modelami `scikit-learn` na medycznych danych nowotworowych. | `Python`, `NumPy`, `Scikit-Learn` |
 ---
 💡 *Wszystkie skrypty zostały napisane z myślą o czytelności, optymalizacji i praktycznym zastosowaniu biznesowym.*
