@@ -3,14 +3,14 @@ import numpy as np
 import streamlit as st
 import joblib
 
-# Ładowanie modeli (upewnij się, że pliki pkl są w tym samym folderze)
+
 kmeans = joblib.load("kmeans_model.pkl")
 scaler = joblib.load("scaler.pkl")
 
 st.title("🛒 Customer Segmentation App")
 st.write("Wprowadź dane klienta, aby przypisać go do odpowiedniego segmentu marketingowego.")
 
-# Sekcja wprowadzania danych
+
 col1, col2 = st.columns(2)
 
 with col1:
@@ -24,7 +24,7 @@ with col2:
     num_web_visits = st.number_input("Wizyty na stronie/msc (Web Visits)", min_value=0, max_value=50, value=3)
     recency = st.number_input("Dni od ostatnich zakupów (Recency)", min_value=0, max_value=365, value=30)
 
-# Przygotowanie danych do predykcji
+
 input_data = pd.DataFrame({
     "Age": [age],
     "Income": [income],
@@ -35,17 +35,16 @@ input_data = pd.DataFrame({
     "Recency": [recency]
 })
 
-# Przycisk predykcji
+
 if st.button("Przewidź Segment", type="primary"):
-    # Skalowanie danych wejściowych
+    
     input_scaled = scaler.transform(input_data)
     
-    # Predykcja
     cluster = kmeans.predict(input_scaled)[0]
     
     st.success(f"🎉 Przypisany segment: Klaster {cluster}")
     
-    # Interpretacja biznesowa klastrów
+    
     st.subheader("Profil Segmentu:")
     if cluster == 0:
         st.info("Klaster 0: Wysoki budżet, częste wizyty na stronie (Klienci Premium Web).")
